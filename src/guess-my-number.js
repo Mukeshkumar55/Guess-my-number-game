@@ -47,6 +47,8 @@ const Guessmynumber = () => {
     sethidingNum("?");
     num = Math.trunc(Math.random() * 20) + 1;
     setguess("");
+    RafUse.current.classList.remove("green-color");
+    RafUse.current.classList.remove("red-color");
   };
 
   return (
