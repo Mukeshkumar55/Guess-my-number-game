@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
 import Guessmynumber from "./guess-my-number";
+import "./mediaQuary.css";
 
 export const val = createContext(null);
 

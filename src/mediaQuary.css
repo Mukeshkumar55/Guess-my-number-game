@@ -1,0 +1,70 @@
+@media (max-width: 60rem) {
+  .Game-Container {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .between {
+    font-size: 1.2rem;
+    margin: 1.6rem 0 0 2rem;
+  }
+  .number {
+    font-size: 3rem;
+    width: 7rem;
+    padding: 1.5rem 0rem;
+  }
+
+  .guess {
+    font-size: 3rem;
+    padding: 1.5rem;
+    width: 12.5rem;
+    position: absolute;
+    margin: 1.6rem;
+    top: 10rem;
+  }
+  .message {
+    margin-bottom: 5rem;
+    margin-left: 2.4rem;
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+  .label-score,
+  .label-highscore {
+    font-size: 55%;
+  }
+  .message-container {
+    display: none;
+  }
+  main {
+    position: relative;
+  }
+  .message-container1 {
+    display: block;
+    position: absolute;
+    top: 5rem;
+  }
+  .checkbtn {
+    position: absolute;
+    top: 21rem;
+  }
+  .gameScore {
+    position: absolute;
+    top: 12rem;
+  }
+}
+@media (max-width: 29rem) {
+  html {
+    font-size: 45%;
+  }
+}

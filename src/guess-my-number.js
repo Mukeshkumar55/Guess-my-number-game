@@ -16,7 +16,7 @@ const Guessmynumber = () => {
 
   const Func = () => {
     if (Score !== 0) {
-      if (guess == num) {
+      if (guess === num) {
         sethidingNum(num);
         sethighScore(Score);
         setMessage("Your guess is correct");
@@ -41,37 +41,50 @@ const Guessmynumber = () => {
   };
 
   return (
-    <div>
-      <header>
-        <h1>Guess My Number!</h1>
-        <p className="between">(Between 1 and 20)</p>
-        <button onClick={Again} className="btn again">
-          Again!
-        </button>
-        <div className="number">{hidingingNum}</div>
-      </header>
-      <main>
-        <section className="left">
-          <input
-            onChange={Random}
-            type="number"
-            className="guess"
-            value={guess}
-          />
-          <button onClick={Func} className="btn check">
-            Check!
+    <div className="Game-Container">
+      <div className="game-section">
+        <header>
+          <h1>Guess My Number!</h1>
+          <p className="between">(Between 1 and 20)</p>
+          <button onClick={Again} className="btn again">
+            Again!
           </button>
-        </section>
-        <section className="right">
-          <p className="message">{Message}</p>
-          <p className="label-score">
-            💯 Score: <span className="score">{Score}</span>
-          </p>
-          <p className="label-highscore">
-            🥇 Highscore: <span className="highscore">{highScore}</span>
-          </p>
-        </section>
-      </main>
+
+          <div className="number">{hidingingNum}</div>
+        </header>
+
+        <main>
+          <div className="message-container1">
+            <p className="message">{Message}</p>
+          </div>
+          <section className="left">
+            <input
+              onChange={Random}
+              type="number"
+              className="guess"
+              value={guess}
+            />
+            <div className="checkbtn">
+              <button onClick={Func} className="btn check">
+                Check!
+              </button>
+            </div>
+          </section>
+          <section className="right">
+            <div className="message-container">
+              <p className="message">{Message}</p>
+            </div>
+            <div className="gameScore">
+              <p className="label-score">
+                💯 Score: <span className="score">{Score}</span>
+              </p>
+              <p className="label-highscore">
+                🥇 Highscore: <span className="highscore">{highScore}</span>
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
   );
 };
