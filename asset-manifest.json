@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Guess-my-number-game/static/css/main.2c3fc904.css",
-    "main.js": "/Guess-my-number-game/static/js/main.91ce6928.js",
+    "main.css": "/Guess-my-number-game/static/css/main.5913ce1e.css",
+    "main.js": "/Guess-my-number-game/static/js/main.d2663359.js",
     "static/js/787.6d7ed5a6.chunk.js": "/Guess-my-number-game/static/js/787.6d7ed5a6.chunk.js",
     "index.html": "/Guess-my-number-game/index.html",
-    "main.2c3fc904.css.map": "/Guess-my-number-game/static/css/main.2c3fc904.css.map",
-    "main.91ce6928.js.map": "/Guess-my-number-game/static/js/main.91ce6928.js.map",
+    "main.5913ce1e.css.map": "/Guess-my-number-game/static/css/main.5913ce1e.css.map",
+    "main.d2663359.js.map": "/Guess-my-number-game/static/js/main.d2663359.js.map",
     "787.6d7ed5a6.chunk.js.map": "/Guess-my-number-game/static/js/787.6d7ed5a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c3fc904.css",
-    "static/js/main.91ce6928.js"
+    "static/css/main.5913ce1e.css",
+    "static/js/main.d2663359.js"
   ]
 }
