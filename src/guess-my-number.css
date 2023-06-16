@@ -120,3 +120,9 @@ h1 {
 .message-container1 {
   display: none;
 }
+.green-color {
+  background-color: rgba(37, 227, 31, 0.838);
+}
+.red-color {
+  background-color: red;
+}

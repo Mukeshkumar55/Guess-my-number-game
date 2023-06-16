@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./guess-my-number.css";
 
 var num = Math.trunc(Math.random() * 20) + 1;
@@ -9,6 +9,13 @@ const Guessmynumber = () => {
   const [Score, setScore] = useState(20);
   const [highScore, sethighScore] = useState(0);
   const [Message, setMessage] = useState("Start guessing...");
+  const RafUse = useRef();
+
+  // const CorrectGuess = () => {
+  //   if (guess == num) {
+  //     RafUse.document.current.classList.add("green-color");
+  //   }
+  // };
 
   const Random = (eve) => {
     setguess(eve.target.value);
@@ -16,10 +23,11 @@ const Guessmynumber = () => {
 
   const Func = () => {
     if (Score !== 0) {
-      if (guess === num) {
+      if (guess == num) {
         sethidingNum(num);
         sethighScore(Score);
         setMessage("Your guess is correct");
+        RafUse.current.classList.add("green-color");
       } else if (guess > num) {
         setScore(Score - 1);
         setMessage("Your guess is too high");
@@ -29,6 +37,7 @@ const Guessmynumber = () => {
       }
     } else {
       setMessage("You lost the game");
+      RafUse.current.classList.add("red-color");
     }
   };
 
@@ -41,7 +50,7 @@ const Guessmynumber = () => {
   };
 
   return (
-    <div className="Game-Container">
+    <div className="Game-Container" ref={RafUse}>
       <div className="game-section">
         <header>
           <h1>Guess My Number!</h1>
